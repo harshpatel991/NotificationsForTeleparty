@@ -1,0 +1,25 @@
+{
+   "browser_action": {
+      "default_icon": "icon128.png"
+   },
+   "content_scripts": [
+      {
+         "css": [
+            "styles.css"
+         ],
+         "js": [
+            "background.js"
+         ],
+         "matches": [
+            "https://www.netflix.com/*"
+         ]
+      }
+   ],
+   "description": "Adds sound and Chrome notifications to Teleparty",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "manifest_version": 2,
+   "name": "Notifications for Teleparty",
+   "version": "0.0.1"
+}
