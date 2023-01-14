@@ -9,8 +9,6 @@ function myMain(evt) {
         if (chatHistoryContainer != null) {
             console.log("Teleparty detected");
             clearInterval(jsInitChecktimer);
-            console.log(chatHistoryContainer);
-            console.log(Notification.permission);
 
 
             if (Notification.permission !== 'denied' || Notification.permission === "default") {
@@ -20,8 +18,6 @@ function myMain(evt) {
             }
 
             var elementToObserve = chatHistoryContainer.children[0];
-            console.log("ement to observe");
-            console.log(elementToObserve);
             observer = new MutationObserver(function (mutationsList, observer) {
                 var profileIcon = window.document.querySelector("[tp-id=edit_profile]").src;
 
